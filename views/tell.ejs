@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tell Us More</title>
+    <% include _main %>
+    <script src="/js/models/FirebaseIncidentReport.js"></script>
+    <script>
+        function OnCurrentUserLoadComplete(){
+
+        $('.right-box').click(function() {
+            let topic = (window.location.search.substr(1).split('=')[1]);
+            console.log(topic);
+            let subject = $("#subject").val().trim();
+            let description = $("#description").val().trim();
+            let email = currentUser.email;
+            let uid = currentUser.uid;
+            addIncidentReport(topic,subject,description,uid,email,function(doc){
+                window.location.href = '/profile';
+            },);
+        });
+
+        }
+    </script>
+    <link rel="stylesheet" href="/css/tell.css">
+</head>
+
+<body>
+    <div class="arc-container-main">
+        <div class="arc-profile-header">
+            <div class="title">Tell Us More</div>
+        </div>
+        <div class="data-link-container">
+            <div class="inps">
+                <div class="inps-grp">
+                    <label>SUBJECT</label>
+                    <input id="subject" placeholder="What happened?" type="text">
+                </div>
+                <div class="inps-grp">
+                    <label>DESCRIPTION</label>
+                    <input id="description" placeholder="Tell us more" type="text">
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom-actions">
+            <div class="explain">
+                <p>We'll get in touch with you via phone or email as soon as possible.</p>
+            </div>
+            <div class="actions">
+                <a href="/options/report"><img src="/img/back.svg"></a>
+                <div class="right-box">
+                    <h4><span>REPORT</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

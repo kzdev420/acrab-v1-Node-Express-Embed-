@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Card</title>
+    <% include _main %>
+    <script defer src="https://js.stripe.com/v3/"></script>
+    <script defer src="/js/addCard.js"></script>
+
+    <link rel="stylesheet" href="/css/addCard.css">
+</head>
+
+<body>
+    <div class="arc-container-main">
+        <div class="arc-profile-header">
+            <div class="title">Add Card</div>
+        </div>
+        <div class="data-link-container">
+            <div class="inps">
+                <form method="post" id="payment-form">
+                    <div class="form-row">
+                        <label for="card-element">
+                        </label>
+                        <div id="card-element">
+                            <!-- A Stripe Element will be inserted here. -->
+                        </div>
+
+                        <!-- Used to display Element errors. -->
+                        <div id="card-errors" role="alert"></div>
+                    </div>
+
+                    <!-- button>Submit Payment</button> -->
+                </form>
+            </div>
+            <div class="explain">
+                <p>Please add your card information</p>
+            </div>
+        </div>
+        <div class="bottom-actions">
+            <img class="back-button" src="/img/back.svg">
+            <div class="right-box">
+                <h4><span id="pay">PAY</span></h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

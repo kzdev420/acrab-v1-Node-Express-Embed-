@@ -1,0 +1,168 @@
+.arc-container-login {
+	position: relative;
+	height: auto !important;
+}
+
+.forms {
+	/* border: 1px solid red; */
+	background: #fff;
+	margin-bottom: 40px;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+.forms .inps {
+	margin-top: 20px;
+	margin-right: 16px;
+	width: 100%;
+	box-sizing: border-box;
+	/* border: 2px solid red; */
+}
+
+.forms .title {
+	font-family: Colfax-Medium;
+	/* border: 1px solid yellow; */
+	text-align: center;
+	font-size: 30px;
+	padding: 20px 0px 20px 0px;
+}
+
+.forms .inps .inps-grp {
+	/* border: 1px solid green; */
+	position: relative;
+	display: flex;
+	flex-direction: column-reverse;
+	margin-bottom: 20px;
+}
+
+.forms .inps .inps-grp .ccode {
+	/* green: 1px solid red; */
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	font-family: Colfax-Regular;
+	font-size: 20px;
+	padding-right: 10px;
+	border-right: 1px solid rgba(120, 120, 120, 0.31);
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.forms .inps .inps-grp label {
+	font-size: 14px;
+	margin-top: 5px;
+	/* letter-spacing: 1px; */
+	font-family: Colfax-Medium;
+}
+
+.forms .inps .inps-grp input[type=text] {
+	border: none;
+	font-family: Colfax-Regular;
+	font-size: 20px;
+
+	border-bottom: 1px solid rgba(120, 120, 120, 0.31);
+	margin-bottom: 7px;
+	outline: none;
+}
+
+.forms .form-footer button:disabled {
+	background: #787878;
+}
+
+.forms .inps .inps-grp .pno {
+	padding-left: 90px;
+}
+
+.forms .inps .inps-grp input[type=text]::placeholder {
+	opacity: 0.2;
+}
+
+.forms .inps .grp p {
+	font-family: Colfax-Regular;
+	margin-bottom: 30px;
+}
+
+.forms .inps .grp ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: #ff1a3a;
+	font-family: Colfax-Regular;
+	text-decoration: underline;
+	margin-bottom: 40px;
+}
+
+.forms .inps .grp ul li {
+	cursor: pointer;
+}
+
+.forms .form-footer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	align-items: center;
+	/* background: #fcfcfc; */
+	border-top: 1px solid rgba(0, 0, 0, .06);
+	padding: 17px;
+	margin-top: 80px;
+	position: fixed;
+	bottom: 0;
+	right: 0 ;
+	width: 100%;
+}
+
+
+
+.forms:nth-child(2) .form-footer {
+	flex-direction: row !important;
+	justify-content: space-between;
+    width: -webkit-fill-available;
+}
+
+.forms .form-footer span {
+	font-size: 30px;
+	color: #da3444;
+}
+
+.forms .form-footer button {
+	border: none;
+	padding: 15px 40px 15px 40px;
+	color: #fff;
+	font-size: 16px;
+	background: #ff1a3a;
+	border-radius: 40px;
+	letter-spacing: 1px;
+	outline: none;
+	font-family: Colfax-Bold;
+	transition: background 0.3s;
+}
+
+.changeForm {
+	cursor: pointer;
+}
+
+.form-1,
+.form-2 {
+	display: none;
+}
+
+#form_3_btn {
+	cursor: pointer;
+}
+
+.loading {
+	position: absolute;
+	width: 95px;
+	right: 35px;
+	top: 75px;
+	display: none;
+	opacity: 1.5;
+}
+
+.data-link-container{
+	padding-right: 16px;
+}

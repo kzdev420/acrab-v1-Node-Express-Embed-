@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arcab Login</title>
+    <% include _main %>
+    <script defer src="/js/login.js"></script>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <div class="red-curtain"></div>
+
+    <div class="arc-container arc-container-login">
+
+        <form>
+
+            <%# YOUR NAME %>
+            <div class="forms form-1">
+                <div class="arc-profile-header">
+                    <div class="title">Your Name?</div>
+                </div>
+                <div class="data-link-container">
+                    <div class="inps">
+                        <div class="inps-grp">
+                            <label for="fname">FIRST NAME</label>
+                            <input placeholder="John" type="text" id="fname" name="fname">
+                        </div>
+                        <div class="inps-grp">
+                            <label for="fname">LAST NAME</label>
+                            <input placeholder="Doe" type="text" id="lname" name="lname">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <button disabled data-action="2" id="form_1_btn" class="changeForm" type="button">NEXT</button>
+                    <img class="loading" src="/img/loading-1.gif">
+                </div>
+            </div>
+
+            <%# YOUR EMAIL %>
+            <div class="forms form-2">
+                <div class="arc-profile-header">
+                    <div class="title">Your Email?</div>
+                </div>
+                <div class="data-link-container">
+                    <div class="inps">
+                        <div class="inps-grp">
+                            <label for="fname">EMAIL</label>
+                            <input placeholder="me@apple.com" type="text" name="email" id="email">
+                        </div>
+                        <div class="grp">
+                            <ul>
+                                <li>@gmail.com</li>
+                                <li>@hotmail.com</li>
+                                <li>@yahoo.com</li>
+                            </ul>
+                        </div>
+                        <div class="grp">
+                            <p>We’ll send receipts for your arcab over here. You may also recieve emails about posts
+                                from
+                                arcab, which you can always unsubscribe from. You will always recieve emails regarding
+                                policy updates and payments.</p>
+                        </div>
+                    </div>
+                    <div id="middle-form" class="form-footer">
+                        <span data-action="3" class="changeForm"><i class="fa fa-chevron-left"></i></span>
+                        <button class="login-now" disabled type="button">START</button>
+                        <img class="loading" src="/img/loading-1.gif">
+                    </div>
+                </div>
+            </div>
+
+            <%# YOUR NUMBER %>
+            <div class="forms form-3">
+                <div class="arc-profile-header">
+                    <div class="title">Your Number?</div>
+                </div>
+                <div class="data-link-container">
+                    <div class="inps">
+                        <div class="inps-grp">
+                            <label for="fname">PHONE NUMBER</label>
+                            <div class="ccode">AE +971</div>
+                            <input class="pno" id="phone_number" placeholder="55 019 2990" type="text" name="fname">
+                        </div>
+                        <div class="grp">
+                            <p> Your phone number is used to verify your identity. We may also contact you about details
+                                of your trip. </p>
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <button data-action="1" id="form_3_btn" disabled class="changeForm" type="button">NEXT</button>
+                        <img class="loading" src="/img/loading-1.gif">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

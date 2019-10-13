@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arcab Login</title>
+    <script>
+    function OnCurrentUserLoadComplete(){
+        window.location.href = '/profile';	
+    }
+    </script>
+    <% include _main %>
+</head>
+<body>
+    <div class="red-curtain"></div>
+
+    <div class="arc-container">
+        <div class="title-card">
+            <img class="logo" src="/img/logo-light.svg">
+            <div class="title">
+                <div class="outer"><span class="inner">Hello</span></div>
+                <div class="outer"><span class="inner">There.</span></div>
+            </div>
+        </div>
+        <img class="logo1" src="/img/rta.svg">
+    </div>
+
+    <div class="arc-container arc-container-1">
+        <div class="title-card-1">
+            <img class="logo" src="/img/logo-red.svg">
+            <div class="title-1">
+                <div class="outer"><span class="inner">This is</span></div>
+                <div class="outer"><span class="inner">arcab.</span></div>
+            </div>
+        </div>
+        <img src="/img/arcab.png" class="arcab">
+        <div class="arc-container-footer">
+            <button><a href="/login">ENTER MOBILE NUMBER</a></button>
+            <p>Read arcab <a href="/privacy">Privacy & Safety Policy</a>, <a href="/terms">Terms of Use.</a></p>
+        </div>
+    </div>
+
+
+</body>
+    <script src="/js/index.js"></script>
+</html>

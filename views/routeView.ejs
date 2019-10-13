@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Route</title>
+    <% include _main %>
+    <script defer src="/js/routeView.js"></script>
+    <script defer src="/js/models/FirebaseRoute.js"></script>
+    <link rel="stylesheet" href="/css/routeView.css">
+</head>
+
+<body>
+    
+    <div id="wait" style="display:none;position:absolute;top:50%;left:45%;">
+        <img src= '/img/loading.gif' /><br>Loading..
+    </div>
+    
+    <script type="text/template" data-template="routeDetails">
+    <div class="arc-container-main">
+        <div class="arc-profile-header">
+            <div class="title from">${startLocationName}</div>
+            <div class="title">to</div>
+            <div class="title to">${endLocationName}</div>
+        </div>
+        <div class="data-link-container">
+            <div class="abt-route">
+                <h3>About This Route</h3>
+                <p>${about}</p>
+            </div>
+
+
+            <div class="route-info">
+                <div class="trips">
+                    <div class="icon-only">
+                        <img src="/img/trips1.svg">
+                    </div>
+                    <div class="right-content">
+                        <h3>${trips} TRIPS</h3>
+                        <P>First trip at ${ftime} and then last trip at ${ltime}</P>
+                    </div>
+                </div>
+
+                <div class="members">
+                    <div class="icon-only">
+                        <img src="/img/user.svg">
+                    </div>
+                    <div class="right-content">
+                        <h3>${membersTotal} MEMBERS</h3>
+                        <P>A brand new, grooming community.</P>
+                    </div>
+                </div>
+
+                <div class="time">
+                    <div class="icon-only">
+                        <img src="/img/time1.svg">
+                    </div>
+                    <div class="right-content">
+                        <h3>${duration} MINS</h3>
+                        <P>${routeInfo}</P>
+                    </div>
+                </div>
+                <div class="common-point">
+                    <div class="icon-only">
+                        <img src="/img/locationPin1.svg">
+                    </div>
+                    <div class="right-content points">
+                        <h3>COMMONPOINT</h3>
+                        <a href="${startLocationGeo}">${startLocationName}</a>
+                        <a href="${endLocationGeo}">${endLocationName}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom-actions">
+            <a href="/profile"><img src="/img/back.svg"></a>
+            <div class="right-box">
+                <h4><span>Quit</span></h4>
+            </div>
+        </div>
+    </div>
+    </script>
+</body>
+
+</html>

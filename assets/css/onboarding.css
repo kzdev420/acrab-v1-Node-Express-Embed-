@@ -1,0 +1,52 @@
+.data-link-container h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #484848;
+    padding-top:22px;
+}
+
+.steps {
+    padding-top: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+a{
+	color: #fff;
+}
+.steps h4 {
+    font-family: Colfax-Regular;
+    font-size: 18px;
+}
+
+.steps h6 {
+    font-family: Colfax-Light;
+    font-size: 14px;
+}
+
+button {
+	border: none;
+	width: 80%;
+	padding: 18px 32px 18px 32px;
+	color: #fff;
+	font-size: 18px;
+	background: #ff1a3a;
+	border-radius: 40px;
+	letter-spacing: 1px;
+	font-family: Colfax-Bold;
+	margin-bottom: 30px;
+	outline: none;
+}
+
+.bottom-actions a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-family: Colfax-Bold;
+	letter-spacing: 1px;
+}
+
+.bottom-actions{
+    text-align: center;
+    border-top:none;
+}

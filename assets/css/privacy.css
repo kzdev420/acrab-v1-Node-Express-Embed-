@@ -1,0 +1,22 @@
+.data-link-container {
+    padding-right: 16px;
+    padding-top: 16px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+
+.privacy h3 {
+    font-family: Colfax-medium;
+    font-size: 20px;
+    color: #484848;
+    padding-bottom: 18px;
+}
+
+.privacy p {
+    font-family: Colfax-Regular;
+    font-size: 16px;
+    padding-bottom: 18px;
+}

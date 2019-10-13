@@ -1,0 +1,14 @@
+.data-link-container{
+    margin-top: 115px;
+}
+
+.options{
+    font-family: Colfax-Regular;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.br-down{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(120, 120, 120, 0.31);
+}

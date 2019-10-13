@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <% include _main %>
+    <script>
+        function OnCurrentUserLoadComplete() {
+            $('.options').click(function() {
+                let nextPage = $(this).attr('data-option');
+                window.location.href = '/options/'+nextPage;
+            });
+
+        };
+    </script>
+    <link rel="stylesheet" href="/css/legal.css">
+</head>
+
+<body>
+    <div class="arc-container-main">
+        <div class="arc-profile-header">
+            <h2>Legal Stuff</h2>
+        </div>
+        <div class="data-link-container">
+            <div class="options br-down" data-option="privacy">
+                <h4>Privacy and Safety Policy</h4>
+            </div>
+            <div class="options br-down" data-option="terms">
+                <h4>Terms of Use</h4>
+            </div>
+        </div>
+        <div class="bottom-actions">
+                <a href="/options"><img class="back-button" src="/img/back.svg"></a>
+        </div>
+    </div>
+</body>
+
+</html>

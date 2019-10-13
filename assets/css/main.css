@@ -1,0 +1,241 @@
+@font-face {
+	font-family: Colfax-Black;
+	src: url(/fonts/Colfax-Black.otf);
+}
+
+@font-face {
+	font-family: Colfax-Bold;
+	src: url(/fonts/Colfax-Bold.otf);
+}
+
+@font-face {
+	font-family: Colfax-Light;
+	src: url(/fonts/Colfax-Light.otf);
+}
+
+@font-face {
+	font-family: Colfax-Medium;
+	src: url(/fonts/Colfax-Medium.otf);
+}
+
+@font-face {
+	font-family: Colfax-Regular;
+	src: url(/fonts/Colfax-Regular.otf);
+}
+
+@font-face {
+	font-family: Colfax-Thin;
+	src: url(/fonts/Colfax-Thin.otf);
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+:root {
+	--red: #ea1126;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Colfax-Medium;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 48px;
+	font-family: Colfax-Bold;
+}
+
+a {
+	color: #000;
+}
+
+a:hover {
+	color: #000;
+}
+
+.red-curtain {
+	background: var(--red);
+	height: 0%;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
+
+
+/* TITLE CARD */
+.title-card {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.title-card > .logo {
+	width: 76px;
+	margin-right: 30px;
+
+	/* FOR GSAP */
+	opacity: 0;
+	transform: translate(-20px, 0px);
+}
+
+.title-card > .title {
+	font-size: 48px;
+	font-family: Colfax-Black;
+	letter-spacing: 0.2;
+	color: #fff;
+	position: relative;
+}
+
+.title-card > .title > .outer {
+	overflow: hidden !important;
+	position: relative;
+	/* border: 1px solid #fff; */
+}
+
+.title-card > .title > .outer > .inner {
+	position: relative;
+	top: 100px;
+	
+}
+
+/* TITLE CARD - 1 */
+
+.title-card-1 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-card-1 > .logo {
+	width: 76px;
+	margin-right: 30px;
+
+	/* FOR GSAP */
+	opacity: 0;
+	transform: translate(-20px, 0px);
+}
+
+.title-card-1 > .title-1 {
+	font-size: 48px;
+	font-family: Colfax-Black;
+	letter-spacing: 0.2;
+	color: #484848;
+	position: relative;
+}
+
+.arc-container-1 {
+	text-align: center;
+}
+.arc-container{
+	position: absolute;
+	margin-top: 40px;
+	width: 100%;
+	/* border: 1px solid white; */
+	display: flex;
+	flex-direction: column;
+}
+
+.arc-container > .logo1{
+	position: fixed;
+	bottom: 50px;
+	align-self: center;
+}
+.arc-container-1 .arcab {
+	width: 300px;
+	position: relative;
+	top: 40px;
+	align-self: center;
+	/* FOR GSAP */
+	opacity: 0;
+}
+
+.arc-container-1 .arc-container-footer {
+	position: relative;
+	text-align: center;
+	font-family: Colfax-Light;
+	top: 50px;
+	opacity: 0;
+}
+
+.arc-container-1 .arc-container-footer button {
+	border: none;
+	width: 80%;
+	padding: 18px 32px 18px 32px;
+	color: #fff;
+	font-size: 18px;
+	background: #ff1a3a;
+	border-radius: 40px;
+	letter-spacing: 1px;
+	font-family: Colfax-Bold;
+	margin-bottom: 30px;
+	outline: none;
+}
+
+.arc-container-1 .arc-container-footer button a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-family: Colfax-Bold;
+	letter-spacing: 1px;
+}
+
+.title-card-1 > .title-1 > .outer {
+	overflow: hidden !important;
+	position: relative;
+	/* border: 1px solid #fff; */
+}
+
+.title-card-1 > .title-1 > .outer > .inner {
+	position: relative;
+	top: 100px;
+	left: 0px;
+}
+
+.arc-profile-header {
+    border-bottom: 1px solid rgba(120,120,120,0.1);
+    width: 100% !important;
+	height: 85px;
+	padding-top: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+	background: #fcfcfc;
+	font-size: 20px;
+	font-family: Colfax-Medium;
+	color: #484848;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+.data-link-container{
+	box-sizing: border-box;
+	position: absolute;
+    /* border: 2px solid #ff9f9f; */
+	height: calc(100% - 70px - 80px);
+	width: 100%;
+    padding: 0 0 0px 16px;
+    overflow-y: scroll;
+	margin-top: 95px;
+}
+
+.bottom-actions {
+    position: fixed;
+    /* border: 1px solid red; */
+    bottom: 0;
+    width: 100%;
+	background: #fcfcfc;
+	border-top: 1px solid rgba(120,120,120,0.1);
+}

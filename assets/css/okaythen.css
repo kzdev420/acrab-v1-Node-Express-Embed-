@@ -1,0 +1,89 @@
+.data-link-container{
+    padding-right: 16px;
+    padding-top: 16px;
+}
+
+
+.privacy h3{
+    font-family: Colfax-medium;
+    font-size: 20px;
+    color: #484848;
+    padding-bottom: 18px;
+}
+
+.privacy p{
+    font-family: Colfax-Regular;
+    font-size: 16px;
+
+}
+
+.safety{
+    margin-top: 24px;
+}
+.safety h3{
+    font-family: Colfax-medium;
+    font-size: 20px;
+    color: #484848;
+    padding-bottom: 18px;
+}
+
+.safety p{
+    font-family: Colfax-Regular;
+    font-size: 16px;
+}
+
+.confirmation{
+    font-family: Colfax-Regular;
+    font-size: 16px;
+}
+
+.button-decline{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.decline{
+    border: 1px solid red;
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	text-transform: uppercase;
+	position: relative;
+	/* width: 124px; */
+	color: #FF1A3A;
+	font-size: 16px;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.bottom-actions{
+    display: flex;
+    justify-content: space-between;
+    background: #fcfcfc;
+}
+
+
+.right-box h4 {
+	border: 1px solid red;
+	text-align: center;
+    padding: 12px 20px 10px 20px;
+    margin-top: 2px;
+	text-transform: uppercase;
+	position: relative;
+	color: #fff;
+	background: #FF1A3A;
+	font-size: 16px;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.right-box{
+    margin-right: 16px;
+}

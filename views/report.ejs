@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Report Something</title>
+    <% include _main %>
+    <!-- <script>
+    function OnCurrentUserLoadComplete(){
+
+        $('.options').click(function() {
+            let option = $(this).attr('data-option');
+            window.location.href = '/options/tell?topic='+option;
+        });
+
+    }
+    </script> -->
+    <link rel="stylesheet" href="/css/report.css">
+</head>
+
+<body>
+    <div class="arc-container-main">
+        <div class="arc-profile-header">
+            <div class="arc-profile-title">
+                <h2>Report Something</h2>
+            </div>
+        </div>
+        <div class="data-link-container">
+            <div class="options br-down" data-option="Emergency">
+                <h4><a href="mailto:support@arcab.ae?subject=Emergency">Emergency</a></h4>
+            </div>
+            <div class="options br-down" data-option="Personal_Safety">
+                <h4><a href="mailto:support@arcab.ae?subject=Personal%20Safety">Personal Safety</a></h4>
+            </div>
+            <div class="options br-down" data-option="Trip">
+                <h4><a href="mailto:support@arcab.ae?subject=Your%20Trip">Your Trip</a></h4>
+            </div>
+            <div class="options br-down" data-option="Payment">
+                <h4><a href="mailto:support@arcab.ae?subject=Payment">Payment</a></h4>
+            </div>
+            <div class="options" data-option="Other">
+                <h4><a href="mailto:support@arcab.ae?subject=Other">Other</a></h4>
+            </div>
+            <div class="explain">
+                <p>arcab values your safety while using our app. Use this tool to reach us when you are out of harm's way.
+                    In case of an emergency always remember to notify law enforcement and / or paramedics if necessary.</p>
+            </div>
+        </div>
+
+
+        <div class="bottom-actions">
+            <a href="/options"><img class="back-button" src="/img/back.svg"></a>
+        </div>
+    </div>
+</body>
+
+</html>

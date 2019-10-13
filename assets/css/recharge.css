@@ -1,0 +1,30 @@
+.data-link-container h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #484848;
+    padding-top:22px;
+}
+
+.charges {
+    padding-top: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.charges h4 {
+    font-family: Colfax-Regular;
+    font-size: 18px;
+}
+
+.charges h6 {
+    font-family: Colfax-Light;
+    font-size: 14px;
+}
+
+.bottom-actions {
+    position: fixed;
+    /* border: 1px solid red; */
+    bottom: 0;
+    width: 100%;
+    background: #fcfcfc;
+}

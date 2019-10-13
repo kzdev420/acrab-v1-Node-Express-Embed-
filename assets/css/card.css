@@ -1,0 +1,95 @@
+.card-ui {
+    display: flex;
+}
+
+.data-link-container {
+    padding: 0;
+}
+
+.card-outer {
+    width: 90%;
+    height: 206px;
+    /* border:1px solid red; */
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    border-radius: 14px;
+    color: #fff;
+    background: linear-gradient(121.11deg, #FF1A3A 1.27%, #C30000 98.71%);
+    box-shadow: 5px 5px 31px rgba(72, 72, 72, 0.5);
+}
+
+.initials {
+    border: 1px solid red;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    top: 20px;
+    right: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #C30000;
+    background: #fff;
+}
+
+.initials span {
+    position: relative;
+    top: 2px;
+}
+
+.info_holder {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.title{
+    font-size: 30px;
+}
+.recharge {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.recharge a {
+    color: #FF1A3A;
+    text-decoration: none;
+}
+
+.recharge-history {
+    /* border-bottom: 1px solid #ccc; */
+    margin: 20px 0px 16px 16px;
+    text-align: left;
+
+}
+
+.recharge-history h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #484848;
+    margin-bottom: 4px;
+}
+
+.history {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.history h4 {
+    font-family: Colfax-Regular;
+    font-size: 18px;
+}
+
+.history h6 {
+    font-family: Colfax-Light;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    
+}

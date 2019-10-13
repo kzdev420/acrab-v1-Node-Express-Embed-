@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recharge</title>
+    <script>
+    function OnCurrentUserLoadComplete(){
+        $('.charges').click(function() {
+            let amount = $(this).attr('data-amount');
+            window.location.href = '/payment?amount='+amount;
+        });
+
+        //Back button Navigation
+        $('.back-button').click(function() {
+            window.location.href = '/card';
+        });
+
+        
+    }
+    </script>
+    <% include _main %>
+    <script defer>
+    
+    
+    </script>
+    <link rel="stylesheet" href="/css/recharge.css">
+</head>
+
+<body>
+    <div class="arc-container-main">
+        <div class="arc-profile-header">
+            <div class="title">
+                <h2>Recharge Pass</h2>
+            </div>
+        </div>
+
+        <div class="data-link-container">
+            <h3>Choose Amount</h3>
+            <div class="charges" data-amount="10">
+                <h4>AED 10</h4>
+                <h6>+0 AED Free</h6>
+            </div>
+            <div class="charges" data-amount="20">
+                <h4>AED 19</h4>
+                <h6>+1 AED Free</h6>
+            </div>
+            <div class="charges" data-amount="30">
+                <h4>AED 28</h4>
+                <h6>+2 AED Free</h6>
+            </div>
+        </div>
+
+        <div class="bottom-actions">
+            <img class="back-button" src="/img/back.svg">
+        </div>
+    </div>
+</body>
+
+</html>

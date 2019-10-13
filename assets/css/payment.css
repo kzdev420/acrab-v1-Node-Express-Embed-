@@ -1,0 +1,55 @@
+.arc-profile-header h4 {
+    padding: 6px 0px 6px 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card h4 {
+    font-family: Colfax-Regular;
+    font-size: 18px;
+}
+
+.card h6 {
+    font-family: Colfax-Light;
+    font-size: 14px;
+}
+
+
+.bottom-actions{
+    position: fixed;
+    /* border: 1px solid red; */
+    bottom: 0;
+    width: 100%;
+    background: #fcfcfc;
+    
+}
+
+.loading {
+    position: absolute;
+    /* width: 95px; */
+    right: 0;
+    left: 0;
+    /* align-content: center; */
+    display: none;
+    opacity: 1.5;
+    margin: 0 auto;
+}
+
+.data-link-container h3{
+    /* border: 1px solid red; */
+    font-size: 20px;
+    font-family: Colfax-Medium;
+    color: #484848;
+    margin-top: 16px;
+}
+
+.icon-only{
+    padding-right: 16px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome Back</title>
+    <% include _main %>
+    <script defer src="/js/login.js"></script>
+    <script defer src="/js/models/FirebaseUser.js"></script>
+    <link rel="stylesheet" href="/css/welcome.css">
+</head>
+
+<body>
+    <div class="arc-container-main">
+        <div class="arc-profile-header">
+            <div class="title">Welcome Back</div>
+        </div>
+        <div class="data-link-container">
+            <div class="inps">
+                <div class="inps-grp">
+                    <label>PASSWORD</label>
+                    <input id="password" placeholder="........" type="password">
+                </div>
+            </div>
+            <div class="error-popup">
+               <img src="/img/error.svg">
+               <div class="error-text">
+                   <p>Wrong password. Try again </p>
+               </div>
+            </div>
+            <div class="explain">
+                <p>Enter the password for +971 55 123 4567 to continue signing into your arcab account. <a href="">Forgot Password?</a> </p>
+            </div>
+        </div>
+        <div class="bottom-actions">
+            <img id = "back" src="/img/back.svg">
+            <div class="right-box">
+                <h4><span class="log-in-user">NEXT</span></h4>
+                <img class="loading" src="/img/loading-1.gif">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

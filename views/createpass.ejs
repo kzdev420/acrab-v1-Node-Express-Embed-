@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Password</title>
+    <% include _main %>
+    <link rel="stylesheet" href="/css/createpass.css">
+</head>
+
+<body>
+    <div class="arc-container-main">
+        <div class="arc-profile-header">
+            <div class="title">Create Password</div>
+        </div>
+        <div class="data-link-container">
+            <div class="inps">
+                <div class="inps-grp">
+                    <label>PASSWORD</label>
+                    <input id="password" placeholder="........" type="password">
+                </div>
+            </div>
+            <div class="explain">
+                <p>Your password must include at least eight characters and one symbol.</p>
+            </div>
+        </div>
+        <div class="bottom-actions">
+            <img src="/img/back.svg" id = "back">
+            <div class="right-box">
+                <button class="sign-up" type="button">NEXT</button>
+                <img class="loading" src="/img/loading-1.gif">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/login.js"></script>
+<script src="/js/models/FirebaseUser.js"></script>
+
+</html>

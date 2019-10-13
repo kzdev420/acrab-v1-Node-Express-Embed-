@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment</title>
+    
+    <%# include _main %>
+    
+        <%# MAIN CSS %>
+        <link rel="stylesheet" href="/css/main.css">
+
+        <%# FONT AWESOME %>
+        <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+        <%# jQuery %>
+        <script src="/js/jq.js"></script>
+
+        <%# GSAP %>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+        <%# DISABLE ZOOM %>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0' >
+
+        <%# Firebase App, Auth and Firestore %>
+        <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-functions.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
+
+
+        <script defer src="/js/init-firebase.js"></script>
+    
+    
+    <script defer src="/js/payment.js"></script>
+    <script defer src="/js/models/FirebaseBalance.js"></script>
+    <link rel="stylesheet" href="/css/payment.css">
+</head>
+
+<body>
+    <div class="arc-container-main">
+        <div class="arc-profile-header">
+            <div class="arc-profile-title">
+                <h2>Payment Method</h2>
+            </div>
+        </div>
+        <div class="data-link-container">
+            <h3>Saved</h3>
+            <div id="saved-cards">
+                <script type="text/template" data-template="savedCard">
+                    <div class="card" data-pay-method="saved-card" data-stripe-id="${stripeID}">
+                        <div class="card-details" >
+                            <h4>Bank Card</h4>
+                            <h6 class="more-details">${type} ending in ${last4}</h6>
+                        </div>
+                        <div class="icon-only">
+                            <img src="/img/${image}.png">
+                        </div>
+                    </div>
+                </script>
+            </div>
+            <img class="loading" src="/img/loading.gif">
+            <h3>Other</h3>
+            <!-- <div class="card" data-pay-method="apple">
+                <div class="card-details" >
+                    <h4>Apple Pay</h4>
+                    <h6>Ready for use</h6>
+                </div>
+                <div class="icon-only">
+                    <img src="/img/applePay.png">
+                </div>
+            </div> -->
+            <div class="card" data-pay-method="new-card">
+                <div class="card-details">
+                    <h4>New Bank Card</h4>
+                    <h6>Credit or Debit Card</h6>
+                </div>
+                <div class="icon-only">
+                    <img src="/img/card.png">
+                </div>
+            </div>
+            <div class="card" data-pay-method="voucher">
+                <div class="card-details">
+                    <h4>Voucher</h4>
+                    <h6>Enter Code and Recharge</h6>
+                </div>
+                <div class="icon-only">
+                    <img src="/img/voucher.png">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom-actions">
+            <img class="back-button" src="/img/back.svg">
+        </div>
+    </div>
+</body>
+
+</html>

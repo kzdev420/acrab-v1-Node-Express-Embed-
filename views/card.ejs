@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Card</title>
+    <% include _main %>
+    <script defer src="/js/models/FirebaseBalance.js"></script>
+    <script defer src="/js/card.js"></script>
+    <link rel="stylesheet" href="/css/card.css">
+</head>
+
+<body>
+    <div class="arc-container-main">
+        <div class="arc-profile-header">
+        <div class="title">...</div>
+    </div>
+    <div class="data-link-container">
+    <div class="card-outer">
+            
+            <script type="text/template" data-template="info_holder" >
+                <div>NEXT RIDE</div>
+                <div>${time}</div>
+                <div>${routeName}</div>
+                <br>
+                <div>BALANCE</div>
+                <div id="userBalance">${balanceData}</div>
+            </script>
+        
+            <div class="initials">
+                <span>.</span>
+            </div>
+            <div class="info_holder" id = "info_holder">
+                
+            </div>
+        </div>
+
+        <div class="recharge">
+            <!-- <a href="/recharge">RECHARGE PASS</a> -->
+            <a href="/topay">How to Pay?</a>
+        </div>
+
+        <div class="recharge-history">
+            <h3>Recharge History</h3>
+            <div class="history">
+                <script type="text/template" data-template="txHistory">
+                    <h4>${amount}</h4>
+                    <h6>${date}</h6>
+                </script>
+            </div>
+        </div>
+    </div>    
+        <div class="bottom-actions">
+            <img class="back-button" src="/img/back.svg">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

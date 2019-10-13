@@ -1,0 +1,45 @@
+.title{
+    font-size: 30px;
+}
+.data-link-container{
+    margin-top: 150px;
+}
+.explain {
+	font-family: Colfax-Regular;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 90px;
+	/* border-bottom: 1px solid rgba(120, 120, 120, 0.31); */
+}
+
+.bottom-actions {
+	display: flex;
+	justify-content: space-between;
+	padding: 32px 24px 6px 0px;
+	background: #fcfcfc;
+}
+
+.right-box h4 {
+	border: 1px solid red;
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	text-transform: uppercase;
+	position: relative;
+	/* width: 124px; */
+	color: #fff;
+	background: #ff1a3a;
+	font-size: 17px;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	letter-spacing: 1px;
+	font-weight: 700;
+	margin-right: 16px;
+}
+
+.right-box h4 span {
+	position: relative;
+	top: 2px;
+}

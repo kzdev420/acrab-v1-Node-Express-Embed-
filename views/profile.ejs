@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arcab</title>
+    <% include _main %>
+    <script defer src="/js/models/FirebaseRoute.js"></script>
+    <script defer src="/js/models/FirebaseUser.js"></script>
+    <script defer src="/js/explore.js"></script>
+    <script defer src="/js/home.js"></script>
+    <script defer src="/js/profile.js"></script>
+
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+
+<body>
+
+<div class="alert-box">
+    <h3>Booking Succesful</h3>
+    <p>
+        You have succesfully booked a ride.
+    </p>
+</div>
+    <div class="arc-container-main">
+        <div class="arc-profile-header">
+            <h4 id="current-date">FRI OCT 31</h4>
+            <div class="arc-profile-title">
+                <span id="userOptions">
+                    <img src="/img/user.svg">
+                </span>
+                <h2 id="greetings">Hi </h2>
+                <span id="settings">
+                    <img src="/img/settings.svg">
+                </span>
+            </div>
+        </div>
+
+        <div class="data-link-container">
+            <div class="tab-collection">
+                <div id="tab-home" class="tab-item active">Home</div>
+                <div id="tab-explore" class="tab-item">Explore</div>
+                <div id="wait" style="display:none;position:absolute;top:500%;left:50%;padding:2px;">
+                   <img src= '/img/loading.gif' /><br>Loading..
+                </div>
+            </div>
+            <div class="tab-content" id="explore-content">
+                <script type="text/template" data-template="routeItem">
+                    <div class="box-column" id="${id}" data-id="${id}" data-action="${buttonText}">
+                        <div class="box">
+                            <h3>${routeName}</h3>
+                            <h4>${description}</h4>
+                            <div class="box-icon">
+                                <div class="icon-dash">
+                                    <img src="/img/trips.svg">
+                                    <p>${trips}</p>
+                                </div>
+                                <div class="icon-dash">
+                                    <img src="/img/userMultiple.svg">
+                                    <p>${membersTotal}</p>
+                                </div>
+                                <div class="icon-dash">
+                                    <img src="/img/time0.svg">
+                                    <p>${duration}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-box" data-id="${id}" >
+
+                            <h4>
+                                <span class="explore-item-action" data-action="${buttonText}">${buttonText}</span>
+                            </h4>
+                        </div>
+                    </div>
+                </script>
+            </div>
+
+            <div class="tab-content" id="home-content">
+                <script type="text/template" data-template="welcomeToArcab">
+                    <div id="welcomeToArcab" class="tile">
+                        <h4>ALERT</h4>
+                        <h3>Welcome to Arcab</h3>
+                        <p>Thank You from everyone here at arcab for being one of the first few people to join our
+                            community.</p>
+                        <div class="route-schedule">
+                            <a id="dimissWelcomeToArcab">DISMISS</a>
+                        </div>
+                    </div>
+                </script>
+
+                <script type="text/template" data-template="emiratesID">
+                    <div id="emiratesIDTile" class="tile">
+                        <h4>ALERT</h4>
+                        <h3>Your Emirates ID</h3>
+                        <p>We’ll need you to scan your Emirates ID before you start riding with arcab.</p>
+                        <input style="display:none" type="file" id="file-input1" accept="image/*" capture>
+                        <input style="display:none" type="file" id="file-input2" accept="image/*" capture>
+                        <div class="route-schedule">
+                            <a id="take-front">TAKE FRONT SIDE</a>
+                            <a id="take-back">TAKE BACK SIDE</a>
+                            <a id="dismiss-emirates-id" style="display:${dismiss}">DISMISS</a>
+                        </div>
+                    </div>    
+                </script>
+                
+                <div id ="checktrip">
+                    <script type="text/template" data-template="upcomingTrip" >
+                        <div id="${id}" class="tile" style = "display:none">
+                            <h4>UPCOMING TRIP</h4>
+                            <h3>Your upcoming ride</h3>
+                            <p>Tomorrow at ${trip} from ${routeName}.</p>
+                            <div class="route-schedule">
+                                <a id="cancelride">CANCEL RIDE</a>
+                            </div>
+                        </div>
+                    </script>
+
+                    <script type="text/template" data-template="cancelledTrip">
+                        <div id="${id}" class="tile" style = "display:none">
+                            <h4>ROUTE</h4>
+                            <h3>Your arcab has been cancelled</h3>
+                            <p>Tomorrow at ${trip} from ${routeName}.</p>
+                            <div class="route-schedule">
+                                <a id="undo">UNDO</a>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+                
+                <div id="route-schedule-pick">
+                    <script type="text/template" data-template="participatingRouteItem">
+                        <div class="tile">
+                            <h4>ROUTE</h4>
+                            <h3>${routeName}</h3>
+                            <p>Pick a time for an upcoming trip this evening.</p>
+                            <div class="route-schedule">
+                                    ${trips}
+                            </div>
+                        </div>
+                    </script>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,104 @@
+.arc-profile-header{
+    flex-direction: column;
+    line-height: 35px;
+    text-align: center;
+    font-size: 30px;
+    height: 150px;
+}
+
+.data-link-container{
+    height: calc(100% - 70px - 80px - 65px);
+    /* border: 1px solid red; */
+    margin-top: calc(95px + 65px);
+    padding-right: 16px;
+}
+
+.abt-route h3{
+    font-family: Colfax-Medium;
+    color: #484848;
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+.abt-route p{
+    font-family: Colfax-Regular;
+    font-size: 16px;
+}
+.route-info {
+    margin-top: 10px;
+}
+
+.route-info div{
+    margin-top: 10px;
+}
+
+.right-content h3{
+    font-family: Colfax-Medium;
+    font-size: 16px;
+    color: #484848;
+}
+
+.right-content p{
+    font-family: Colfax-Regular;
+    font-size: 14px;
+
+}
+.trips {
+    display: flex;
+
+}
+
+.members {
+    display: flex;
+
+}
+
+.time {
+    display: flex;
+
+}
+
+.common-point {
+    display: flex;
+    
+}
+
+.points a{
+    display: block;
+    color: #ff1a3a;
+    font-family: Colfax-Regular;
+    text-decoration-color: #ff1a3a;
+    margin-bottom: 15px;
+}
+
+.bottom-actions{
+    display: flex;
+    justify-content: space-between;
+  
+    background: #fcfcfc;
+}
+
+.right-box h4 {
+	border: 1px solid red;
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	text-transform: uppercase;
+	position: relative;
+	/* width: 124px; */
+    color: #ffffff;
+    background: #ff1a3a;
+	
+	font-size: 17px;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	letter-spacing: 1px;
+    font-weight: 700;
+    margin-right: 16px;
+}
+
+.right-box h4 span {
+	position: relative;
+	top: 2px;
+}
